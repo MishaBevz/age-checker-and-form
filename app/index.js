@@ -1,0 +1,5 @@
+import './main.scss'
+import confirmAge from './components/confirm-age-modal/confirm-age.js'
+import entry from './components/entry/entry.js'
+import changeLanguage from './components/header/change-language.js'
+import form from './components/form/form.js'

@@ -1,0 +1,35 @@
+.modal {
+    font-family: 'BudBoldCyr';
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(198,38,57,.8);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.title_modal {
+    margin-bottom: 90px !important;
+    /* margin-right: 95px; */
+}
+.confirm-age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &_modal {
+        margin-right: 25px;
+        margin-bottom: 172px;
+    }
+}
+.confirm-age__title {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}

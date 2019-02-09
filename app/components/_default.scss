@@ -1,0 +1,84 @@
+:root {
+    --font-base: 'BudBoldCyr';
+    --font: 'BudBoldCyr';
+}
+
+html, body {
+    font-family: var(--font-base);
+    line-height: 1.16;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    min-width: 1024px;
+    position: relative;
+}
+
+input, button {
+    font-family: var(--font-base);
+    outline: none !important;
+    box-shadow: none !important;
+    &:focus {
+      outline: none;
+    }
+}
+
+button {
+    cursor: pointer;
+    &[disabled] {
+        color: inherit;
+        cursor: default;
+    }
+}
+
+a {
+    font-family: var(--font-base);
+    &:focus {
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul, ol {
+    list-style: none;
+    list-style-type: none;
+    li {
+        list-style: none;
+        list-style-type: none;
+        list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+    }
+}
+
+
+input, button, a {
+    &:focus {
+      outline: none;
+    }
+}
+
+
+[draggable] {
+    user-select: none;
+    cursor: move;
+}
+
+.no-transition {
+    transition: none !important;
+    .landing-info__pic_2:before {
+        transition: none !important;
+    }
+    * {
+        transition: none !important;
+    }
+}
+
+#map {
+    position: absolute;
+    top: -500px;
+    left: -500px;
+    opacity: 0;
+    display: none;
+}

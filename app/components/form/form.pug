@@ -1,0 +1,46 @@
+form.form
+  h2.form__title.form__title_indent ЗАГОЛОВОК
+  .form__block.form__block_row
+    .form__block.form__block_column
+      input.input(type='text', name='name', placeholder='ИМЯ*', required='')
+      input.input(type='text', name='surname', placeholder='ФАМИЛИЯ*', required='')
+      input.input(type='text', name='code', placeholder='КОД')
+      .form__block.form__block_row
+        .checkbox
+          input#checkbox.checkbox__input(type='checkbox')
+          label.checkbox__label(for='checkbox')
+        p.checkbox__attention
+          | Нажимая «Подать заявку», я принимаю все условия 
+          a.checkbox__attention_link
+            | Согласия на обработку персональных данных и Обязательства об отказе от претензий.
+    .form__block.form__block_column
+      label.label
+        p.input-desc Достаточно написать свой никнейм
+        input.input(type='text', name='instagram', placeholder='INSTAGRAM')
+      input.input(type='email', name='email', placeholder='E-MAIL*', required='')
+      label.label
+        input.input.input_date(type='text', name='date', onfocus="(this.type='date')", onblur="(this.type='text')", placeholder='ДАТА*', required='')
+        img.input-date-calendar(src=require('../../images/calendar.svg') alt="calendar")
+      button.form__button.link ПОДАТЬ ЗАЯВКУ
+    .form__field-block
+      a.link.link_underline ВТОРОЙ ГОСТЬ
+      .form__block.hidden
+        .form__block.form__block_row
+          .form__block.form__block_column
+            input.input(type='text', name='guestName', placeholder='ИМЯ*', required='')
+            input.input(type='text', name='guestSurname', placeholder='ФАМИЛИЯ*', required='')
+            h3.form__block-title ВТОРОЙ ГОСТЬ
+        .form__block.form__block_column
+          label.label
+            p.input-desc Достаточно написать никнейм гостя
+            input.input(type='text', name='instagram', placeholder='INSTAGRAM')
+          input.input(type='email', name='guestEmail', placeholder='E-MAIL*', required='')
+          .form__block.form__block_row
+            .checkbox
+              input#checkbox-guest.checkbox__input(type='checkbox')
+              label.checkbox__label(for='checkbox-guest')
+            p.checkbox__attention
+              | Нажимая «Подать заявку», я принимаю все условия 
+              a.checkbox__attention_link
+                | Согласия на обработку персональных данных и Обязательства об отказе от претензий.
+  p.form-desc * Обязательные для заполнения поля

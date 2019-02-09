@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+    margin-right: 45px;
+    margin-bottom: 28px;
+    .languages {
+        font-family: 'BudBoldCyr';
+        line-height: 19px;
+        font-size: 20px;
+        color: #FFFFFF;
+        z-index: 1000;
+        &__line {
+            padding-left: 5px;
+            padding-right: 2px;
+        }
+        &__language {
+            color: #FFFFFF;
+            text-decoration-line: underline;
+            &:hover {
+                opacity: 0.8;
+            }
+            &_active {
+                text-decoration-color: #E5E5E5;
+                text-decoration-line: none;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }   
+    }
+}

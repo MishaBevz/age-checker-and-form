@@ -1,0 +1,30 @@
+@import './title_small/_title_small.scss';
+
+.block-title {
+    font-family: 'BudBoldCyr';
+    // margin-left: 391px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: calc(100vw - 100%);
+}
+.title {
+    font-family: 'BudBoldCyr';
+    line-height: 94px;
+    font-size: 100px;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+.description {
+    line-height: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 344px;
+    margin-bottom: 112px;
+    margin-left: -78px;
+    text-transform: uppercase;
+    &_indent {
+        margin-bottom: 218px;
+        margin-right: 872px;
+    }
+}

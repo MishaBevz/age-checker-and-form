@@ -1,0 +1,193 @@
+@import './components/reset.scss';
+@import './components/header/header.scss';
+@import './components/confirm-age-modal/confirm-age-modal.scss';
+@import './components/entry/entry.scss';
+@import './components/block-title/block-title.scss';
+@import './components/form/form.scss';
+@import './components/statement/statement.scss';
+@import './components/footer/footer.scss';
+
+@font-face {
+    font-family: 'BudBoldCyr';
+    src: url('./fonts/Bud-Bold-Cyr/BudBoldCyr.otf') format('otf'),
+         url('./fonts/Bud-Bold-Cyr/BudBoldCyr.eot') format('eot'),
+         url('./fonts/Bud-Bold-Cyr/BudBoldCyr.ttf') format('ttf'),
+         url('./fonts/Bud-Bold-Cyr/BudBoldCyr.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFDinTextCompPro-Regular';
+    src: url('./fonts/PFDinTextCompPro-Regular/PFDinTextCompPro-Regular.eot?#iefix') format('embedded-opentype'),  
+         url('./fonts/PFDinTextCompPro-Regular/PFDinTextCompPro-Regular.woff') format('woff'), 
+         url('./fonts/PFDinTextCompPro-Regular/PFDinTextCompPro-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@-moz-document url-prefix() {
+    .option {
+        padding-left: 4px !important;
+    }
+    .option_day {
+        padding-right: 28px !important;
+    }
+    .option_year {
+        padding-right: 44px !important;
+        padding-left: 3px !important;
+    }
+}
+
+body {
+    background: url('https://via.placeholder.com/1920x1080/7f0000?text=:)');
+    background-position-y: -73px;
+    > img {
+        display: none;
+    }
+}
+
+.hide {
+    transition: opacity 0.5s;
+    opacity: 0 !important;
+}
+.hidden {
+    display: none !important;
+}
+
+.appearance {
+    transition: opacity 0.5s;
+    opacity: 1 !important;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 19px);
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    position: relative;
+}
+.select-box {
+    color: #002F63;  
+    padding-top: 15px;
+    opacity: 1;
+    &_day {
+        padding-bottom: 24px;
+        
+    }
+    &_month {
+        padding-bottom: 12px;
+         
+    }
+    &_year {
+        padding-bottom: 30px;
+        width: 108px; 
+    }
+}
+::-webkit-scrollbar-thumb {
+    background-color: #002F63;
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+    
+}
+::-webkit-scrollbar{
+    width: 8px;
+    }
+.select {
+    display: flex;
+    position: relative;
+    background: white;
+    cursor: pointer;
+    height: 50px;
+    width: auto;   
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    flex-direction: column;
+    &_day {
+        position: absolute;
+        left: -194px;
+    }
+    &_month {
+        position: absolute;
+        left: -105px;
+    
+    }
+    &_year {
+        position: absolute;
+        left: 54px;
+    }
+}
+.select__button {
+    border: 7px solid transparent;
+    border-top: 7px solid #002F63;
+    margin-left: 7px;
+    margin-right: 12px;
+    margin-top: 7px;
+
+}
+.list-option {
+    display: none;
+    overflow-y: auto;
+    
+}
+
+.option {
+    line-height: normal;
+    font-size: 16px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-left: 2px;
+    &:hover {
+        opacity: 1;
+        color: black;
+    }
+    &_day {
+        padding-right: 12px;
+        padding-bottom: 4px;  
+    }
+    &_month {
+        padding-right: 42px;
+    }
+    &_year {
+        padding-right: 33px;
+        padding-left: 1px;
+    }
+}
+.option-active {
+    padding-left: 17px;
+    opacity: 0.5;
+    &_day {
+        width: 37px;
+    }
+    &_month {
+        width: 105px;
+    }
+    &_year {
+        width: 74px;
+    }
+}
+h2 {
+    line-height: 28px;
+    font-size: 30px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.link {
+    cursor: pointer;
+    transition: opacity 0.3s;
+    &_underline {
+        text-decoration-line: underline !important;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+

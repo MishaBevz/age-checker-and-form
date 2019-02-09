@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+        include components/header/header.pug
+        include ./components/block-title/block-title.pug
+            include components/block-title/title_small/title_small.pug
+        section.entry-page 
+            include components/confirm-age-modal/confirm-age-modal.pug
+            include components/entry/entry.pug
+        section.statement-page.hidden
+            include components/statement/statement.pug
+        script(src="bundle.js")
